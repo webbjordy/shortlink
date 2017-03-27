@@ -10,6 +10,16 @@ Tracker.autorun(() => {
   onAuthChange(isAuthenticated);
 });
 
+// stateless functional componennt
+
+// const myComponent = () => {
+//   return(
+//     <div>
+//       <h1>My component here</h1>
+//     </div>
+//   );
+// };
+
 
 
 Meteor.startup(() => {
