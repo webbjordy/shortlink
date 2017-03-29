@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { Links } from '../api/links';
 import LinksList from './LinksList';
 import PrivateHeader from './privateheader';
 import AddLink from './addlink'
@@ -11,8 +10,8 @@ export default () => {
        <div>
          <PrivateHeader title="Your Links" />
          <LinksListFilters />
-         <LinksList/>
          <AddLink />
+         <LinksList/>
        </div>
      );
 }
