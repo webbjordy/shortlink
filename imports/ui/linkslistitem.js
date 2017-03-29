@@ -39,6 +39,9 @@ renderStats() {
         <p>{this.props.shortUrl}</p>
         <p>{this.props.visible.toString()}</p>
         {this.renderStats()}
+        <a href={this.props.shortUrl} target="_blank">
+          Visit
+        </a>
         <button ref="copy" data-clipboard-text={this.props.shortUrl}>
           {this.state.justCopied ? 'Copied' : 'Copy'}
         </button>
