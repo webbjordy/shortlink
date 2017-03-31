@@ -17,6 +17,10 @@ h1 {
   margin-bottom: $boxed-view-margin-btm;
 }
 
+p {
+  margin-bottom: $spacing
+}
+
 a {
   color: black;
 }
@@ -25,6 +29,6 @@ input[type="text"], input[type="email"], input[type="password"] {
   border: 1px solid $input-border;
   font-size: $base-font-size;
   margin-bottom: $boxed-view-margin-btm;
-  padding: $spacing;
+  padding: $input-spacing;
 
 }
