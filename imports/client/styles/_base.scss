@@ -14,7 +14,13 @@ body {
 
 h1 {
   font-weight: 300;
-  margin-bottom: $boxed-view-margin-btm;
+  margin-bottom: $spacing;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: $spacing;
+
 }
 
 p {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Accounts } from 'meteor/accounts-base';
+import { Link } from 'react-router';
 
 // export default class PrivateHeader extends React.Component {
 //   onLogout() {
@@ -17,9 +18,11 @@ import { Accounts } from 'meteor/accounts-base';
 
 const PrivateHeader = (props) => {
   return (
-    <div>
-      <h1>{props.title}</h1>
-      <button onClick={() => Accounts.logout()}>Logout</button>
+    <div className="title-bar">
+      <div className="title-bar__content">
+      <h1 className="title-bar__title">{props.title}</h1>
+      <Link className="title-bar__sub" to="/" onClick={() => Accounts.logout()}>logout</Link>
+    </div>
     </div>
   );
 };
